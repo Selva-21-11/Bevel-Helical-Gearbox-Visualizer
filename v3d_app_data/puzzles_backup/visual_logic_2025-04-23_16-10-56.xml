@@ -1,0 +1,189 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="231.26481085955947" scrolly="-89.2973118248965" scale="0.8163265306122448">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="g5Q)5VYr5,5VA`_qz.fX">animation</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="cE;EtH;OQVDRSv.t{B?1" x="-110" y="-30">
+      <value name="VALUE">
+        <shadow type="animationList" id="mGw$;qW@SmkXh`~^j,c?">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="getAnimations" id="[jTeo9.wVPI;u3SNhE*%">
+          <value name="OBJECTINPUT">
+            <shadow type="objectList" id="%(+dK#L2xt]V(c|B4@ax">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id="=gVPs87d=K!8wWcQw44J"></block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="W^.%^!Ro$F3BVWG#tFG3" x="-110" y="50">
+      <field name="VAR" id="g5Q)5VYr5,5VA`_qz.fX">animation</field>
+      <value name="VALUE">
+        <block type="math_number" id="AsYi*$K*-P0vRH2msx;_">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="bjCj+xKY1Tq;fwbV+4Xq" x="-110" y="130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="HZ~GSW6B1/]oWrdToWgV">
+          <field name="TEXT">Exploded View</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="`g:krRJxXk:Z@G%8`RU1">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare" id="mj{E8PjB#{Epw2$qthJa">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="@CSY1gDmt~mz8}{WV94T">
+                  <field name="VAR" id="g5Q)5VYr5,5VA`_qz.fX">animation</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="m6Q|k[;g^[Zs{b;P/e.=">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playAnimationAdv" id="bO)b)$3zypR]j%S(c:,2">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+              <field name="REVERSED">FALSE</field>
+              <field name="LOOP">LoopOnce</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="D/ow])BqNi0GR2OCcZEF">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="getAnimations" id="V0%s=V`z`3z,azf3t|Rc">
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList" id="%(+dK#L2xt]V(c|B4@ax">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="allObjectList" id="w7h?t+T4(;Jk?+J(^-A~"></block>
+                  </value>
+                </block>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="nGk8-3B+Qh8DRwLp_Irm">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="hz)hA$}N14C]6^eT1Zp^">
+                  <field name="NUM">99</field>
+                </shadow>
+              </value>
+              <value name="SPEED">
+                <shadow type="math_number" id="$}Yw|{J7FuRLU7,2rmA[">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="ghvdym)c9`hJ!;TgmX%H">
+                  <field name="VAR" id="g5Q)5VYr5,5VA`_qz.fX">animation</field>
+                  <value name="VALUE">
+                    <block type="math_number" id="2|;4IhQ8q$C;m0Dp*x9O">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="playAnimationAdv" id="0~l.==4iuu5`Wu}9h$[s">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+              <field name="REVERSED">TRUE</field>
+              <field name="LOOP">LoopOnce</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="D/ow])BqNi0GR2OCcZEF">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="getAnimations" id="Iq(J]mYZwdAS/MqFMonw">
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList" id="%(+dK#L2xt]V(c|B4@ax">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="allObjectList" id="`eaA[g%jms.pgTbxlJX@"></block>
+                  </value>
+                </block>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="Afxp8$Do6t(Tr`0Bk/8,">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="MHmD^Vy_z3*(8bL2JIke">
+                  <field name="NUM">99</field>
+                </shadow>
+              </value>
+              <value name="SPEED">
+                <shadow type="math_number" id="(-?LTHN#MLYEaki18P6p">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="~r*GKol|CcI)#;L%NPxc">
+                  <field name="VAR" id="g5Q)5VYr5,5VA`_qz.fX">animation</field>
+                  <value name="VALUE">
+                    <block type="math_number" id="2jwS)D@@[Dgq/dx@4w]@">
+                      <field name="NUM">0</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="1MKo%)1KnQ]QJX,p-~+K" x="-130" y="470">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="N,N7V{9p2nrr8!IOS^}e">
+          <field name="TEXT">Gearbox Housing</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="outline" id="cpPR$6pq?EG5HFXm11,}">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="a-7smbgjmgw)Mu;tU0[|">
+              <field name="FIELDNAME">Gearbox Housing</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setTimeout" id="yJO/LU|iCzv4y#oZTD!#">
+              <value name="VALUE">
+                <shadow type="math_number" id="{lZ6]dQuU|(+9eVRc|B)">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="outline" id="B*vla.8,0O9Iw)lArNc:">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="m}]J,u$9uiW*5?`?pqub">
+                      <field name="FIELDNAME">Gearbox Housing</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

@@ -1,0 +1,155 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="158.01525576318363" scrolly="140.26827003513074" scale="0.7404322273126936">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="HI@3Vz5?S1`{Q(lS~]Er" x="-110" y="-150">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="2EZT_fC!Jd0R/(/%:7J+">
+          <field name="TEXT">playanim</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="{f5Qggdz-g^2q.|*c1xi">
+          <field name="DOM_OBJECT">CONTAINER</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setHTMLElemAttribute" id="JY@^Jag=Q$SAD*N|Eo8I">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id=".pBh4Bo{929I%tpb@Z]O">
+              <field name="TEXT">Exploded view</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="#uNRjE{;}QQR6!cj6m@9">
+              <field name="TEXT">playanim</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="/1uimzr.Q^b0ut_Zq2%X">
+              <field name="ATTRIBUTE">style</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="text" id="dlS?/;_|N6Y9:f/a1Fr.">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="cssStyleList" id="uUUH^V)kp+5,Ii,y#})a">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml">
+                    <prop name="position" shadowvalue="absolute"></prop>
+                    <prop name="background-color" shadowvalue="ffffff"></prop>
+                    <prop name="width" shadowvalue="150px"></prop>
+                    <prop name="height" shadowvalue="40px"></prop>
+                    <prop name="top" shadowvalue="85%"></prop>
+                    <prop name="left" shadowvalue="45%"></prop>
+                    <prop name="cursor" shadowvalue="grab"></prop>
+                    <prop name="border-radius" shadowvalue="010px"></prop>
+                    <prop name="border" shadowvalue="none"></prop>
+                  </mutation>
+                  <value name="PROP0">
+                    <shadow type="positionDropdown" id="tkif*Vk0-!*3Zmjr5l%|">
+                      <field name="TEXT">absolute</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP1">
+                    <shadow type="text" id="A$1MWiii*=p@CM|;MP*m">
+                      <field name="TEXT">ffffff</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP2">
+                    <shadow type="text" id="]O-~IDkm(UF]!B5Y~r]^">
+                      <field name="TEXT">150px</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP3">
+                    <shadow type="text" id="Ks(Nz)gl~3kvkA7PtR8H">
+                      <field name="TEXT">40px</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP4">
+                    <shadow type="text" id="YZX-clH#:3yS.CT`BVVu">
+                      <field name="TEXT">85%</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP5">
+                    <shadow type="text" id="*?}{(=ki[UV65;73KAoi">
+                      <field name="TEXT">45%</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP6">
+                    <shadow type="cursorDropdown" id="k]hHAqgc-5}SM.ez9$?i">
+                      <field name="TEXT">grab</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP7">
+                    <shadow type="text" id="xn3fv^k=L~L/3(4UE-F^">
+                      <field name="TEXT">010px</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP8">
+                    <shadow type="text" id=".^x_]g]77)H7Ti};ElSa">
+                      <field name="TEXT">none</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id=".di?tgckB0ZG?iTny_n-">
+                  <field name="TEXT">playanim</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="cE;EtH;OQVDRSv.t{B?1" x="-110" y="250">
+      <value name="VALUE">
+        <shadow type="animationList" id="mGw$;qW@SmkXh`~^j,c?">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="getAnimations" id="[jTeo9.wVPI;u3SNhE*%">
+          <value name="OBJECTINPUT">
+            <shadow type="objectList" id="%(+dK#L2xt]V(c|B4@ax">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id="=gVPs87d=K!8wWcQw44J"></block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="bjCj+xKY1Tq;fwbV+4Xq" x="-90" y="430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="HZ~GSW6B1/]oWrdToWgV">
+          <field name="TEXT">playanim</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="bO)b)$3zypR]j%S(c:,2">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopOnce</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="D/ow])BqNi0GR2OCcZEF">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="getAnimations" id="V0%s=V`z`3z,azf3t|Rc">
+              <value name="OBJECTINPUT">
+                <shadow type="objectList" id="%(+dK#L2xt]V(c|B4@ax">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="allObjectList" id="w7h?t+T4(;Jk?+J(^-A~"></block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
