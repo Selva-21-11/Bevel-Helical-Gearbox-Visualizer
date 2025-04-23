@@ -59,6 +59,7 @@ body {
     width: 120px;
     max-width: 200px;
     height: 50px;
+    z-index: -10px;
   }
   
   .button-1 { top: 180px; }
