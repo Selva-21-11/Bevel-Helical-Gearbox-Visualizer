@@ -32,16 +32,14 @@ This interactive 3D application, built using **Verge3D**, demonstrates the inner
 
 ### Full Assembly View
 
-![image](https://github.com/user-attachments/assets/b4f4f655-74b1-4aab-81aa-061cd59b7779)
-
+![image](https://github.com/user-attachments/assets/8c892418-575d-4f69-892b-0d3e45dd3ae4)
 
 ---
 
 ### Exploded View with Button
 
 > Click the “Exploded View” button to toggle between exploded and assembled modes.
-
-![image](https://github.com/user-attachments/assets/e29ce9d1-3850-4b39-9ce9-92476b00ea32)
+![image](https://github.com/user-attachments/assets/36d093d5-a3e2-41c5-a4a1-4ee2903bba80)
 
 ---
 
@@ -49,8 +47,7 @@ This interactive 3D application, built using **Verge3D**, demonstrates the inner
 
 > Buttons like “Bevel Gear”, “Output Shaft”, etc.
 
-![image](https://github.com/user-attachments/assets/3d5d104e-29cd-46bd-8aab-9f93998935c7)
-
+![image](https://github.com/user-attachments/assets/8d21b2d1-d908-4a20-8def-395938566e1d)
 
 ---
 
@@ -64,5 +61,6 @@ This interactive 3D application, built using **Verge3D**, demonstrates the inner
 - Mounting base
 - Inspection cover
 - Retaining rings
+- Bearings
 
 ---
