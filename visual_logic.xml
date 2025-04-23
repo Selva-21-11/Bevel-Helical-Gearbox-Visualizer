@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
-  <tab name="New Tab" type="CommonTab" active="true" scrollx="-416.7245620486091" scrolly="-399.02458503304024" scale="0.5525219281866832">
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-1595.2488230396684" scrolly="-737.0757624009874" scale="0.8163265306122448">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="g5Q)5VYr5,5VA`_qz.fX">animation</variable>
     </variables>
@@ -896,6 +896,195 @@
                         </shadow>
                         <block type="groupList" id="l7@eP+;NRCbqYWr]llZ}">
                           <field name="FIELDNAME">Bevel Gear</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="EKAASpc+FJ?skuu/G%A%" x="2150" y="1110">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="58X:Uy]eU6xYm;/@t9S*">
+          <field name="TEXT">Bearings</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="iLu/efwB)y~L{FaR6~](">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare" id="JXi1hOuqi3eYOlZR!]1Z">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="381Q,JZfOU,iv)u(#Oz.">
+                  <field name="VAR" id="g5Q)5VYr5,5VA`_qz.fX">animation</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="[r(K~#*7T1O#Vd`ES(#Z">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="animateParam" id="Im34{..gVB_^(#O|+:6z">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+              <field name="EASING">Linear</field>
+              <field name="EASING2">InOut</field>
+              <field name="YOYO">FALSE</field>
+              <value name="FROM">
+                <shadow type="math_number" id="l!w.PC,YZ42JD*.1MU[d">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="qhB+RFP.KWH@L=seI~IV">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="HSQR]Io1ZB|++k*_=h1D">
+                  <field name="NUM">0.5</field>
+                </shadow>
+              </value>
+              <value name="REPEAT">
+                <shadow type="math_number" id="6Ah?Qg/Qi]0dF9fB|=|g">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <statement name="ON_UPDATE">
+                <block type="setMaterialValue" id="M8+8DUGIxx#i4Vp/b]am">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="ca{8vXF#AFP]AU6cz9z?">
+                      <field name="FIELDNAME">hood</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="g%4jHE$$MfBO,j.b]jd-">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                    <block type="animateParamUpdate" id="7/P{N?rnB2NBZ~w]m@=k"></block>
+                  </value>
+                </block>
+              </statement>
+              <statement name="WHEN_FINISHED">
+                <block type="outline" id="?Dt0[d(_:}d3t=aZz?0D">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="V%v^NJP#`y1bU93L3}KA">
+                      <field name="FIELDNAME">Inspection Cover </field>
+                    </shadow>
+                    <block type="groupList" id="p@QtF]W`GcdK2LGySo-O">
+                      <field name="FIELDNAME">Bearings</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="setTimeout" id="[i:6zDm~5{W]bH@9oCGZ">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="Av|c}SZ+m/g^-C)gWhJO">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="outline" id="cekL!lgy0vdQj2?7n4{V">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="n9o`Cp(^vP]w+F$z{c=F">
+                          <field name="FIELDNAME">Inspection Cover </field>
+                        </shadow>
+                        <block type="groupList" id="#OQ]Q2Zf3Bs]Cpf@iMcP">
+                          <field name="FIELDNAME">Bearings</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="animateParam" id="[.MeUZzBGcUyN2kETB|p">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <field name="EASING">Linear</field>
+                          <field name="EASING2">InOut</field>
+                          <field name="YOYO">FALSE</field>
+                          <value name="FROM">
+                            <shadow type="math_number" id="10|WSSC#1,~Pmt$V/eC$">
+                              <field name="NUM">0</field>
+                            </shadow>
+                          </value>
+                          <value name="TO">
+                            <shadow type="math_number" id="?Jg:H2S$Dqqcii_6_PH/">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="~bj8=xKu5W:f2=aXq2`*">
+                              <field name="NUM">0.5</field>
+                            </shadow>
+                          </value>
+                          <value name="REPEAT">
+                            <shadow type="math_number" id="2De6)2?g1?M,;|6Aor{m">
+                              <field name="NUM">0</field>
+                            </shadow>
+                          </value>
+                          <statement name="ON_UPDATE">
+                            <block type="setMaterialValue" id="JVbfZqz}o5lp(5R{,J~u">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+                              <field name="MAT_VAL_NAME">Value</field>
+                              <value name="MATERIAL">
+                                <shadow type="materialList" id="m9cntRbI]mtZu/bD`Mnp">
+                                  <field name="FIELDNAME">hood</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE">
+                                <shadow type="math_number" id="g%4jHE$$MfBO,j.b]jd-">
+                                  <field name="NUM">0.5</field>
+                                </shadow>
+                                <block type="animateParamUpdate" id="34*8Y2n3XR_huRNW;]~h"></block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="outline" id="0RxkvPYbBd;CzvQp(T9u">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="V%v^NJP#`y1bU93L3}KA">
+                  <field name="FIELDNAME">Inspection Cover </field>
+                </shadow>
+                <block type="groupList" id="QSvmGoG1k15ZL9}=z^?U">
+                  <field name="FIELDNAME">Bearings</field>
+                </block>
+              </value>
+              <next>
+                <block type="setTimeout" id=".VWgVgYu_0:{@vTx_L4d">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="%UH|Gq^bJQNYo3![5q[d">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="outline" id="9?[0DXOcd34E7*nC11q}">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="n9o`Cp(^vP]w+F$z{c=F">
+                          <field name="FIELDNAME">Inspection Cover </field>
+                        </shadow>
+                        <block type="groupList" id="5dny+YGMkMi@-}I%]Eso">
+                          <field name="FIELDNAME">Bearings</field>
                         </block>
                       </value>
                     </block>
